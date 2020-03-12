@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ExempleModelController!{% endblock %}
+
+{% block body %}
+<h1>bonjour je suis la vue ma p'tite poule</h1>
+
+{# {{(dump (livres))}} #}
+
+{% for cle, livre in livres %}
+     {{livre.titre}}
+     <br>
+     {{livre.description}}
+     <br>
+     {{livre.prix}}
+     <br>
+{% endfor %}
+{% endblock %}
